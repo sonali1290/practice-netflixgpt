@@ -30,7 +30,6 @@ const Login = () => {
       <form className='w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white'>
         <h1 className='font-bold text-3xl py-4'>{isSignInForm ? 'Sign In' : 'Sign Out'}</h1>
         {!isSignInForm && (<input type='text' ref={name} placeholder='Full Name' className='p-4 my-4 w-full bg-gray-700 text-lg' />)}
-
         <input type='text' ref={email} placeholder='Email Address' className='p-4 my-4 w-full bg-gray-700 text-lg' />
         <input type='text' ref={password} placeholder='Password' className='p-4 my-4 w-full bg-gray-700 text-lg' />
         <p className='font-normal text-red-600'>{errorMessage}</p>
